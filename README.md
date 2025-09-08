@@ -7,27 +7,23 @@ Este projeto é uma APP desenvolvida em React/Next para gerenciar e rankear mús
 - npm >= 9  
 - API externa rodando localmente (ex.: http://localhost:8000/api)  
 
-## Clonar o projeto
-
+Clonar o projeto
 ```bash
 git clone https://github.com/seu-usuario/techpines-app.git
 cd techpines-app
 ```
 
-## Instalar dependências
-
+Instalar dependências
 ```bash
 npm install
 ```
 
-## Configurar variáveis de ambiente
-
+Configurar variáveis de ambiente
 ```bash
 cp .env.example .env
 ```
 
-## Rodar o projeto
-
+Rode o projeto
 ```bash
 npm run build
 npm run start
