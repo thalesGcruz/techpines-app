@@ -35,8 +35,8 @@ npm run start
 ```
 
 ## Informações de login para teste
-Email: teste@email.com
-Senha: 123
+- Email: `teste@email.com`
+- Senha: `123`
 
 ## Observações
 
