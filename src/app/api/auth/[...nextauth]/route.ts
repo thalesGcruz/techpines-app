@@ -1,4 +1,4 @@
-import NextAuth,  { DefaultSession, NextAuthOptions, Session, User } from "next-auth";
+import NextAuth,  { NextAuthOptions, Session, User } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { authService, AuthResponse } from "@/services/auth-service";
 
@@ -7,7 +7,7 @@ interface JWT {
   [key: string]: any;
 }
 
-export const authOptions: NextAuthOptions = {
+const authOptions: NextAuthOptions = {
   providers: [
     CredentialsProvider({
       id: "operator",

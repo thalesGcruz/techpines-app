@@ -6,7 +6,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { musicService } from "@/services/music-service";
 import toast from "react-hot-toast";
-import { SendHorizontal } from 'lucide-react';
+import { Loader2, SendHorizontal } from 'lucide-react';
 
 const schema = z.object({
   url: z
@@ -77,7 +77,7 @@ export default function FormSuggestSong({ onSubmit }: SuggestSongFormProps) {
         disabled={isSubmitting}
         className="flex gap-2 h-12 items-center justify-center rounded-md bg-orange-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-orange-700 disabled:cursor-not-allowed disabled:opacity-60"
       >
-        {isSubmitting ? "Carregando..." : <SendHorizontal size={18}/>}
+         {isSubmitting ?  <Loader2 className="animate-spin w-5 h-5" /> : <SendHorizontal size={18}/>}
         
       </button>
     </form>
