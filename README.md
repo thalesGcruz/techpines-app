@@ -43,4 +43,7 @@ npm run start
 - A API precisa estar rodandoa.  
 - O login e autenticação dependem do token retornado pela API.
 
+## Prévia do Aplicativo
+<img width="1292" height="871" alt="banner" src="https://github.com/user-attachments/assets/685b2996-3423-4afa-a33b-13a87e1fddec" />
+
 
