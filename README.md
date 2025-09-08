@@ -10,6 +10,8 @@ Este projeto é uma APP desenvolvida em React/Next para gerenciar e rankear mús
 Clonar o projeto
 ```bash
 git clone https://github.com/thalesGcruz/techpines-app.git
+```
+```bash
 cd techpines-app
 ```
 
@@ -26,6 +28,9 @@ cp .env.example .env
 Rode o projeto
 ```bash
 npm run build
+
+```
+```bash
 npm run start
 ```
 
