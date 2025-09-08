@@ -20,6 +20,7 @@ interface MusicStore {
   fetchMusics: (page?: number, limit?: number) => Promise<void>;
   reset: () => void;
   removeMusic: (id: number) => void;
+  removeToList: (id: number) => void;
   updateMusic: (id: number, music: Partial<Music>) => void;
   createMusic: (data: {url: string }) => void;
 }
@@ -98,6 +99,13 @@ export const useMusicsStore = create<MusicStore>((set, get) => ({
     } catch (err) {
       toast.error("Erro ao remover musica");
     }
+  },
+
+  removeToList: (id: number) => {
+      set((state) => ({
+        musics: state.musics.filter((music) => music.id !== id),
+        total: state.total - 1,
+      }));
   },
 
   reset: () => set({ musics: [], total: 0, page: 1, filters: {} }),

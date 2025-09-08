@@ -24,6 +24,7 @@ export default function MusicsList({ type }: Props) {
     page, 
     total,
     removeMusic,
+    removeToList,
     updateMusic,
     loading
   } = useMusicsStore()  
@@ -72,7 +73,7 @@ export default function MusicsList({ type }: Props) {
                 <Button 
                 onClick={() => {
                   updateMusic(Number(music.id), { status: "active" })
-                  removeMusic(Number(music.id))
+                  removeToList(Number(music.id))
                 }
                 }
                 className="bg-gray-900 border cursor-pointer border-green-200 text-green-200">
@@ -81,7 +82,7 @@ export default function MusicsList({ type }: Props) {
                 <Button 
                 onClick={() => {
                   updateMusic(Number(music.id), { status: "reproved" })
-                  removeMusic(Number(music.id))
+                  removeToList(Number(music.id))
                 }}
                 className="bg-gray-900 border cursor-pointer border-rose-300 text-rose-300">
                   <span>Reprovar</span><CircleX />
